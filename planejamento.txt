@@ -1,0 +1,19 @@
+-Homepage
+-Fazer Login e Criar conta (Usuário e autenticação)
+    - Email
+    -Username
+    -Senha
+    -Filmes que já assistiu
+
+- Filmes / Séries
+    -Thumb
+    -Titulo
+    -descrição
+    -Categoria
+    -Quantidades de views
+    -Data da criação
+    -Episódios
+        - videos
+        - titulo
+
+-Barra de pesquisa
