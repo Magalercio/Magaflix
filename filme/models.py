@@ -18,6 +18,11 @@ class Filme(models.Model):
     visualizacoes = models.IntegerField(default=0)
     data_criacao = models.DateTimeField(default= timezone.now)
 
+    def __str__(self):
+        #diz qual o valor exibido quando vc der um print no objeto da classe.
+        return self.titulo
+
+
 # Criar Epsodios
 
 # Criar usuarios
