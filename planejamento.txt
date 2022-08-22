@@ -13,7 +13,7 @@
     -Quantidades de views
     -Data da criação
     -Episódios
-        - videos
+        - videos (link do video no youtube, embebed)
         - titulo
 
 -Barra de pesquisa

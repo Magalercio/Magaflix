@@ -12,7 +12,26 @@ Detalhes Filmes Magaflix
     <p>{{ object }}</p>
     <p>{{ object.descricao }}</p>
     <img src="{{ object.thumb.url }}">
-</div>
 
+
+    <h2>Episódios</h2>
+    <br>
+    {% for episodio in object.episodios.all %}
+    <a href="{{ episodio.video }}">
+        <p>Episódio {{ forloop.counter }}: {{ episodio.titulo }}</p>
+    </a>
+    {% endfor %}
+</div>
+<div class="py-10">
+    <h2>Filmes Relacionados:</h2>
+    <br>
+        {% for filme in filmes_relacionados %}
+        <p>
+           <a href="{% url 'filme:detalhesfilme' filme.pk %}">
+               {{ filme.titulo }}
+           </a>
+        </p>
+        {% endfor %}
+</div>
 
 {% endblock %}

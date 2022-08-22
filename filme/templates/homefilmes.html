@@ -11,9 +11,9 @@ HomeFilmes Magaflix
     <br>
     {% for filme in object_list %}
     <hr>
-        <p class="text-center">{{filme}}</p>
+        <a href="{% url 'filme:detalhesfilme' filme.id %}"><p class="text-center">{{filme}}</p></a>
         <p class="text-center">{{filme.descricao}}</p>
-        <div class='flex justify-center items-center'><img src="{{filme.thumb.url}}"></div>
+    <a href="{% url 'filme:detalhesfilme' filme.id %}"><div class='flex justify-center items-center'><img src="{{filme.thumb.url}}"></div></a>
     {% endfor %}
 </div>
 {% endblock %}
