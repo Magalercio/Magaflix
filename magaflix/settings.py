@@ -23,9 +23,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-ctj5t@gxl$f#w&g6+mqa!ff9g-q6hg6a4ufhos_5xqc(_pzk7n'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['127.0.0.1', 'magaflix.herokuapp.com']
 
 
 # Application definition
